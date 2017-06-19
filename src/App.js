@@ -13,7 +13,7 @@ import {
 
 const options = {
   xhtmlOut: true,
-  breaks: false,
+  breaks: true,
   linkify: true,
   typographer: false,
   quotes: '“”‘’',
