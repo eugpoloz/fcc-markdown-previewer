@@ -2,7 +2,7 @@
   "name": "fcc-markdown-previewer",
   "version": "0.1.0",
   "homepage": "https://eugpoloz.github.io/fcc-markdown-previewer",
-  "private": true,
+  "private": false,
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^15.6.1",
