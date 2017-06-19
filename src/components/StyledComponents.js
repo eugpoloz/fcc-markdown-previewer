@@ -27,15 +27,15 @@ export const Heading = styled.h1`
   font-weight: 700;
   font-size: 28px;
   text-align: center;
+  color: #fff;
 `;
 
-const PHeading = Heading.withComponent('p');
-
-export const Footer = styled(PHeading)`
-  margin-top: 20px;
-  margin-bottom: 0;
+export const Footer = styled.p`
+  width: 100%;
+  margin: 20px 0 0;
   font-weight: 300;
   font-size: 16px;
+  text-align: center;
 `;
 
 export const PreviewContainer = Flex.extend`
