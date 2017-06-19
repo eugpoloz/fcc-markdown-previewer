@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+/*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -22,7 +22,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
+}*/
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -50,7 +50,34 @@ table {
   box-sizing: border-box;
 }
 
+html, body, #root,
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html,
+body,
+#root {
+  display: flex;
+  flex: 1;
+  align-self: stretch;
+  min-height: 100%;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.25;
+}
+
+#root {
+  background: linear-gradient(to bottom, #9c27b0 0%, #fff 100%);
+}
+
+::selection {
+  background-color: #9c27b0;
+  color: #fff;
 }
