@@ -13,7 +13,7 @@ import {
 
 const options = {
   xhtmlOut: true,
-  breaks: true,
+  breaks: false,
   linkify: true,
   typographer: false,
   quotes: '“”‘’',
@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <Container>
         <Heading>
-          GF Markdown Previewer
+          GHF Markdown Previewer
         </Heading>
 
         <PreviewContainer>

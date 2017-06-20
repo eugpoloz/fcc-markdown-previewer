@@ -2,7 +2,7 @@
 
 > A GitHub-Flavored Markdown previewer built with React.
 
-Solves FCC React [Build a Markdown Previewer](https://www.freecodecamp.com/challenges/build-a-markdown-previewer) challenge. Uses `styled-components` and [react-markdown-renderer](https://github.com/InsidersByte/react-markdown-renderer).
+Solves FCC React [Build a Markdown Previewer](https://www.freecodecamp.com/challenges/build-a-markdown-previewer) challenge. Uses `styled-components` for styles, `gh-pages` for deploying, and [react-markdown-renderer](https://github.com/InsidersByte/react-markdown-renderer) for parsing Markdown.
 
 Check it out: [GHF Markdown Previewer](http://evgeniae.tk/fcc-markdown-previewer/).
 

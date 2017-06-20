@@ -74,6 +74,15 @@ body {
   background: linear-gradient(to bottom, #9c27b0 0%, #fff 100%);
 }
 
+code,
+pre {
+  background-color: pink;
+}
+
+pre {
+  padding: 10px;
+}
+
 ::selection {
   background-color: #9c27b0;
   color: #fff;

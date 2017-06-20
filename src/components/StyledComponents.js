@@ -49,55 +49,45 @@ export const PreviewContainer = Flex.extend`
   font-size: 16px;
 `;
 
-export const Textarea = styled.textarea`
+const PreviewChild = styled.div`
   display: flex;
   flex: 1;
   align-self: stretch;
-  margin-right: 10px;
   padding: 10px;
   font-size: inherit;
   background-color: rgba(255,255,255,0.75);
-  border: none;
-  resize: none;
+  border: 2px solid transparent;
 
-  &::-webkit-scrollbar {
-    width: 12px;
+  ::-webkit-scrollbar {
+    width: 8px;
   }
-  &::-webkit-scrollbar-track {
-    background: #fff;
+  ::-webkit-scrollbar-track {
+    background: transparent;
   }
-  &::-webkit-scrollbar-thumb {
-    border: 2px solid #fff;
+  ::-webkit-scrollbar-thumb {
     background: #673AB7;
     border-radius: 10px;
   }
 `;
 
-export const Preview = styled(MarkdownRenderer)`
-  display: flex;
+const StyledTextarea = PreviewChild.withComponent('textarea');
+export const Textarea = StyledTextarea.extend`
+  margin-right: 10px;
+  resize: none;
+`;
+
+const StyledPreview = PreviewChild.withComponent(MarkdownRenderer);
+export const Preview = StyledPreview.extend`
   flex-direction: column;
-  flex: 1;
-  align-self: stretch;
   overflow: auto;
   margin-left: 10px;
-  padding: 10px;
-  font-size: inherit;
-  background-color: rgba(255,255,255,0.75);
 
-  & p {
+  & p, & h1, & h2, & h3, & h4, & h5, & h6 {
     padding-bottom: 10px;
   }
 
-  &::-webkit-scrollbar {
-    width: 12px;
-  }
-  &::-webkit-scrollbar-track {
-    background: #fff;
-  }
-  &::-webkit-scrollbar-thumb {
-    border: 2px solid #fff;
+  ::-webkit-scrollbar-thumb {
     background: #9c27b0;
-    border-radius: 10px;
   }
 `;
 
