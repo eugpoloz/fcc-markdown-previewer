@@ -41,6 +41,7 @@ class App extends Component {
 
         <PreviewContainer>
           <Textarea
+            autoFocus
             placeholder="Write some __Markdown__ in da box!"
             onChange={this.handleChange}
           />
